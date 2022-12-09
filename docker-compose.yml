@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  nb:
+    build:
+      context: ./dir/
+      dockerfile: .docker/Dockerfile
+      args: 
+        # UID: ${LOCALUID}
+        # GID: ${LOCALGID}
+        UID: 10185
+        GID: 1001
+    container_name: aiso_cuda_env
+    hostname: aiso_cuda_env
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      # notebook用
+      - 7790:8888
+      # TensorBoard用 (デフォルトは6006)
+      - 7791:6006
+    volumes:
+      - ./dir:/home/nb-user
+      - /home/ksl_pub/suggestive_anger:/home/nb-user/ksl_pub/suggestive_anger
+    # dns:
+    #   - 127.0.1.1
+    #   - 8.8.8.8
+    #   - 8.8.4.4
+    # dns_search: nagaokaut.ac.jp
+    tty: true
