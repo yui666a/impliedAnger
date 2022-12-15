@@ -21,6 +21,7 @@ WORKDIR /tmp
 RUN apt-get update && apt-get install -y \
   python3 \
   make \
+  cmake \
   build-essential \
   libssl-dev \
   libbz2-dev \
@@ -81,7 +82,17 @@ RUN pip3 install torch torchvision
 #   && sudo rm requirements.txt
 # # RUN pip3 install tensorflow==2.4.2 --user
 
-# Install JUMAN++
+# Install JUMAN++ (v2)
+RUN wget "https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz" \
+  && tar xvf jumanpp-2.0.0-rc3.tar.xz
+  && cd jumanpp-2.0.0-rc3
+  && mkdir bld && cd bld
+
+RUN curl -LO https://github.com/catchorg/Catch2/releases/download/v2.13.8/catch.hpp \
+  && mv catch.hpp ../libs/ \
+  && cmake .. -DCMAKE_BUILD_TYPE=Release \
+  && sudo make install -j "$(nproc)" \
+  && sudo make install
 # RUN wget http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-1.02.tar.xz \
 #   && tar xJvf jumanpp-1.02.tar.xz \
 #   && cd jumanpp-1.02 \
