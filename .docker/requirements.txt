@@ -1,0 +1,173 @@
+# # docker を作った時にインストールしたパッケージ
+# certifi
+# charset-normalizer
+# cryptography
+# idna
+# numpy
+# nvidia-cublas-cu11
+# nvidia-cuda-nvrtc-cu11
+# nvidia-cuda-runtime-cu11
+# nvidia-cudnn-cu11
+# Pillow
+# pip
+# Pygments
+# pyOpenSSL
+# PyYAML
+# requests
+# setuptools
+# six
+# torch
+# torchvision
+# typing_extensions
+# urllib3
+# wheel
+
+# # jupyterlab, jupyterlab-serverをインストールした時のパッケージ
+jupyter_server
+jupyterlab
+
+# anyio
+# argon2-cffi
+# argon2-cffi-bindings
+# arrow
+# asttokens
+# attrs
+# Babel
+# backcall
+# beautifulsoup4
+# bleach
+# cffi
+# comm
+# debugpy
+# decorator
+# defusedxml
+# entrypoints
+# executing
+# fastjsonschema
+# fqdn
+# ipykernel
+# ipython
+# ipython-genutils
+# isoduration
+# jedi
+# Jinja2
+# json5
+# jsonpointer
+# jsonschema
+# jupyter_client
+# jupyter_core
+# jupyter-events
+# jupyter_server
+# jupyter_server_terminals
+# jupyterlab
+# jupyterlab-pygments
+# jupyterlab_server
+# MarkupSafe
+# matplotlib-inline
+# mistune
+# nbclassic
+# nbclient
+# nbconvert
+# nbformat
+# nest-asyncio
+# notebook
+# notebook_shim
+# packaging
+# pandocfilters
+# parso
+# pexpect
+# pickleshare
+# platformdirs
+# prometheus-client
+# prompt-toolkit
+# psutil
+# ptyprocess
+# pure-eval
+# pycparser
+# pyrsistent
+# python-dateutil
+# python-json-logger
+# pytz
+# pyzmq
+# rfc3339-validator
+# rfc3986-validator
+# Send2Trash
+# sniffio
+# soupsieve
+# stack-data
+# terminado
+# tinycss2
+# tomli
+# tornado
+# traitlets
+# uri-template
+# wcwidth
+# webcolors
+# webencodings
+# websocket-client
+
+
+# # pandas, scikit-learn をインストールした時のパッケージ
+pandas
+scikit-learn
+
+# joblib
+# pandas
+# scikit-learn
+# scipy
+# threadpoolctl
+
+
+# # transformers, sentencepiece をインストールした時のパッケージ
+transformers
+sentencepiece
+
+# filelock
+# huggingface-hub
+# regex
+# tokenizers
+# tqdm
+# transformers
+# sentencepiece
+
+
+# #  transformers[tf-cpu] をインストールした時のパッケージ
+transformers[tf-cpu]
+
+# absl-py
+# astunparse
+# cachetools
+# flatbuffers
+# gast
+# google-auth
+# google-auth-oauthlib
+# google-pasta
+# grpcio
+# h5py
+# keras
+# keras-nlp
+# Keras-Preprocessing
+# libclang
+# Markdown
+# oauthlib
+# onnx
+# onnxconverter-common
+# opt-einsum
+# protobuf
+# pyasn1
+# pyasn1-modules
+# requests-oauthlib
+# rsa
+# tensorboard
+# tensorboard-data-server
+# tensorboard-plugin-wit
+# tensorflow
+# tensorflow-cpu
+# tensorflow-estimator
+# tensorflow-hub
+# tensorflow-io-gcs-filesystem
+# tensorflow-text
+# termcolor
+# tf2onnx
+# Werkzeug
+# wrapt
