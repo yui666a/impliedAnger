@@ -1,164 +1,164 @@
-absl-py
-astor
-astroid
-astunparse
-attrdict
-attrs
-backcall
-beautifulsoup4
-bert-tensorflow
-bleach
-blis
-boto
-boto3
-botocore
-cachetools
-catalogue
-certifi
-chardet
-click
-cycler
-cymem
-Cython
-dartsclone
-dataclasses
-decorator
-defusedxml
-docutils
-entrypoints
-filelock
-flatbuffers
-future
-gast
-gensim
-ginza
-google-auth
-google-auth-oauthlib
-google-pasta
-grpcio
-h5py
-idna
-importlib-metadata
-ipykernel
-ipython
-ipython-genutils
-ipywidgets
-isort
-ja-ginza
-jaconv
-Janome
-jedi
-Jinja2
-jmespath
-joblib
-json5
-jsonschema
-jupyter
-jupyter-client
-jupyter-console
-jupyter-core
+# # docker を作った時にインストールしたパッケージ
+# certifi
+# charset-normalizer
+# cryptography
+# idna
+# numpy
+# nvidia-cublas-cu11
+# nvidia-cuda-nvrtc-cu11
+# nvidia-cuda-runtime-cu11
+# nvidia-cudnn-cu11
+# Pillow
+# pip
+# Pygments
+# pyOpenSSL
+# PyYAML
+# requests
+# setuptools
+# six
+# torch
+# torchvision
+# typing_extensions
+# urllib3
+# wheel
+# # jupyterlab, jupyterlab-serverをインストールした時のパッケージ
+jupyter_server
 jupyterlab
-jupyterlab-server
-Keras
-Keras-Applications
-keras-bert
-keras-embed-sim
-keras-layer-normalization
-keras-multi-head
-keras-nightly
-keras-pos-embd
-keras-position-wise-feed-forward
-Keras-Preprocessing
-keras-self-attention
-keras-transformer
-kiwisolver
-lazy-object-proxy
-Markdown
-MarkupSafe
-matplotlib
-mccabe
-mecab-python3
-mistune
-murmurhash
-nbconvert
-nbformat
-notebook
-numpy
-oauthlib
-opt-einsum
-packaging
+# anyio
+# argon2-cffi
+# argon2-cffi-bindings
+# arrow
+# asttokens
+# attrs
+# Babel
+# backcall
+# beautifulsoup4
+# bleach
+# cffi
+# comm
+# debugpy
+# decorator
+# defusedxml
+# entrypoints
+# executing
+# fastjsonschema
+# fqdn
+# ipykernel
+# ipython
+# ipython-genutils
+# isoduration
+# jedi
+# Jinja2
+# json5
+# jsonpointer
+# jsonschema
+# jupyter_client
+# jupyter_core
+# jupyter-events
+# jupyter_server
+# jupyter_server_terminals
+# jupyterlab
+# jupyterlab-pygments
+# jupyterlab_server
+# MarkupSafe
+# matplotlib-inline
+# mistune
+# nbclassic
+# nbclient
+# nbconvert
+# nbformat
+# nest-asyncio
+# notebook
+# notebook_shim
+# packaging
+# pandocfilters
+# parso
+# pexpect
+# pickleshare
+# platformdirs
+# prometheus-client
+# prompt-toolkit
+# psutil
+# ptyprocess
+# pure-eval
+# pycparser
+# pyrsistent
+# python-dateutil
+# python-json-logger
+# pytz
+# pyzmq
+# rfc3339-validator
+# rfc3986-validator
+# Send2Trash
+# sniffio
+# soupsieve
+# stack-data
+# terminado
+# tinycss2
+# tomli
+# tornado
+# traitlets
+# uri-template
+# wcwidth
+# webcolors
+# webencodings
+# websocket-client
+# # pandas, scikit-learn をインストールした時のパッケージ
 pandas
-pandocfilters
-parso
-pexpect
-pickleshare
-plac
-preshed
-prometheus-client
-prompt-toolkit
-protobuf
-ptyprocess
-pyasn1
-pyasn1-modules
-pydot
-pydot-ng
-Pygments
-pyknp
-pylint
-pyparsing
-pyrsistent
-python-dateutil
-pytorch-pretrained-bert
-pytorch-transformers
-pytz
-PyYAML
-pyzmq
-qtconsole
-QtPy
-regex
-requests
-requests-oauthlib
-rsa
-s3transfer
-sacremoses
 scikit-learn
-scipy
-Send2Trash
-sentencepiece
-six
-sklearn
-smart-open
-sortedcontainers
-soupsieve
-spacy
-srsly
-# SudachiDict-core
-SudachiPy
-tensorboard
-tensorboard-data-server
-tensorboard-plugin-wit
-tensorflow
-tensorflow-estimator
-termcolor
-terminado
-testpath
-thinc
-threadpoolctl
-tokenization
-tokenizers
-torch
-torchtext
-tornado
-tqdm
-traitlets
+# joblib
+# pandas
+# scikit-learn
+# scipy
+# threadpoolctl
+# # transformers, sentencepiece をインストールした時のパッケージ
 transformers
-typed-ast
-typing-extensions
-urllib3
-wasabi
-wcwidth
-webencodings
-Werkzeug
-widgetsnbextension
-wrapt
-zipp
+sentencepiece
+# filelock
+# huggingface-hub
+# regex
+# tokenizers
+# tqdm
+# transformers
+# sentencepiece
+# #  transformers[tf-cpu] をインストールした時のパッケージ
+transformers[tf-cpu]
+# absl-py
+# astunparse
+# cachetools
+# flatbuffers
+# gast
+# google-auth
+# google-auth-oauthlib
+# google-pasta
+# grpcio
+# h5py
+# keras
+# keras-nlp
+# Keras-Preprocessing
+# libclang
+# Markdown
+# oauthlib
+# onnx
+# onnxconverter-common
+# opt-einsum
+# protobuf
+# pyasn1
+# pyasn1-modules
+# requests-oauthlib
+# rsa
+# tensorboard
+# tensorboard-data-server
+# tensorboard-plugin-wit
+# tensorflow
+# tensorflow-cpu
+# tensorflow-estimator
+# tensorflow-hub
+# tensorflow-io-gcs-filesystem
+# tensorflow-text
+# termcolor
+# tf2onnx
+# Werkzeug
+# wrapt
+torch
+torchvision

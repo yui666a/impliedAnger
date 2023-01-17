@@ -10,8 +10,15 @@ services:
         # GID: ${LOCALGID}
         UID: 10185
         GID: 1001
-    container_name: aiso_cuda_env
-    hostname: aiso_cuda_env
+    container_name: impliedAnger_aiso
+    hostname: impliedAnger_aiso
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all # GPUの枚数
+              capabilities: [gpu]
     environment:
       TZ: Asia/Tokyo
     ports:

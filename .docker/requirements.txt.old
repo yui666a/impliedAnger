@@ -8,7 +8,6 @@ backcall
 beautifulsoup4
 bert-tensorflow
 bleach
-blis
 boto
 boto3
 botocore
@@ -29,11 +28,9 @@ entrypoints
 filelock
 flatbuffers
 future
-gast
 gensim
 ginza
 google-auth
-google-auth-oauthlib
 google-pasta
 grpcio
 h5py
@@ -96,13 +93,11 @@ plac
 preshed
 prometheus-client
 prompt-toolkit
-protobuf
 ptyprocess
 pyasn1
 pyasn1-modules
 pydot
 pydot-ng
-Pygments
 pyknp
 pylint
 pyparsing
@@ -155,7 +150,6 @@ transformers
 typed-ast
 typing-extensions
 urllib3
-wasabi
 wcwidth
 webencodings
 Werkzeug

@@ -21,11 +21,9 @@
 # typing_extensions
 # urllib3
 # wheel
-
 # # jupyterlab, jupyterlab-serverをインストールした時のパッケージ
 jupyter_server
 jupyterlab
-
 # anyio
 # argon2-cffi
 # argon2-cffi-bindings
@@ -105,23 +103,17 @@ jupyterlab
 # webcolors
 # webencodings
 # websocket-client
-
-
 # # pandas, scikit-learn をインストールした時のパッケージ
 pandas
 scikit-learn
-
 # joblib
 # pandas
 # scikit-learn
 # scipy
 # threadpoolctl
-
-
 # # transformers, sentencepiece をインストールした時のパッケージ
 transformers
 sentencepiece
-
 # filelock
 # huggingface-hub
 # regex
@@ -129,11 +121,8 @@ sentencepiece
 # tqdm
 # transformers
 # sentencepiece
-
-
 # #  transformers[tf-cpu] をインストールした時のパッケージ
 transformers[tf-cpu]
-
 # absl-py
 # astunparse
 # cachetools
@@ -171,3 +160,5 @@ transformers[tf-cpu]
 # tf2onnx
 # Werkzeug
 # wrapt
+torch
+torchvision

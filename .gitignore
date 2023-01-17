@@ -1,0 +1,9 @@
+/dir/.cache
+/dir/.local
+/dir/ksl_resources
+/dir/.jupyter
+/dir/.ipython
+/dir/.keras
+/dir/resources/*
+__pycache__
+.ipynb_checkpoints

@@ -1,5 +1,5 @@
 # PROJECT_NAME = impliedAnger_aiso
-PROJECT_NAME = aiso20221209
+PROJECT_NAME = implied-anger
 
 ## Docker compose
 up:
@@ -8,12 +8,13 @@ up:
 	--project-name $(PROJECT_NAME) up -d \
 
 down:
-	docker-compose \
+	docker compose \
 	--project-name $(PROJECT_NAME) down
 
 build:
 	LOCALUID=`id -u` LOCALGID=`id -g` \
-	docker-compose --project-name $(PROJECT_NAME) build --no-cache
+	docker compose \
+	--project-name $(PROJECT_NAME) build --no-cache --progress=plain
 
 restart:
-	docker-compose --project-name $(PROJECT_NAME) restart
+	docker compose --project-name $(PROJECT_NAME) restart
