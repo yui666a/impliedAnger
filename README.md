@@ -25,6 +25,6 @@
 
 7. 自分のPCで Terminal/コマンドプロンプト を開き，下のコマンドの `XXXX` や `YYYY` を .env で設定した `JUPYTER_LAB_PORT` と `TENSORBOARD_PORT` に変更し、自分のPCのブラウザから `localhost:XXXX`  や `localhost:YYYY` にアクセスすれば notebook や TensorBoard が見えるはずです
 
-> `ssh ksl-nn02.nagaokaut.ac.jp -L XXXX:ksl-nn02:XXXX -L YYYY:ksl-nn02:YYYY -N`  
-> 例） `ssh ksl-nn02.nagaokaut.ac.jp -N -L 7790:ksl-nn02:7790 -L 7791:ksl-nn02:7791 -N`  
+> `ssh ksl-nn02 -L XXXX:ksl-nn02:XXXX -L YYYY:ksl-nn02:YYYY -N`  
+> 例） `ssh ksl-nn02 -N -L 7790:ksl-nn02:7790 -L 7791:ksl-nn02:7791 -N`  
 
