@@ -1,5 +1,7 @@
+.bash_history
 /dir/.cache
 /dir/.local
+/dir/ksl_pub
 /dir/ksl_resources
 /dir/.jupyter
 /dir/.ipython

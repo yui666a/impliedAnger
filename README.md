@@ -1,30 +1,30 @@
 # 【notebookが使えるコンテナの設定】
 
 1. 以下のコマンドで解凍する
-> tar -zxvf docker_template_repressed-anger.tar.gz  
+> tar -zxvf docker_template-implied_anger.tar.gz  
 
 2. フォルダ名は各々変更後、cdコマンドでカレントディレクトリをそのフォルダ内にしてください  
 
 3. `Makefile` 内の `PROJECT_NAME` となっている部分を各自ユニークな名前に変更
 
-4. `docker-compose.yml` 内の `xxxx` となっている部分を各自ユニークな名前に変更(2箇所)  
+4. .envファイルの定数を指示にそって設定する
 
-5. 同じくその少し下の `ports` の `ZZZZ:ZZZZ` を変更  
-（ホスト:コンテナ となっていますが、ホストは自由に決めてかまいません．  
-コンテナ側は他のコンテナやサービスと競合してはいけないので、私たちは`7777`周辺を使うようにしましょう．  
-これを書いているときは`7000`番台に何も動いていませんが、誰かと競合しないように `docker ps` コマンドを実行して PORTS の部分を確認し、すでに使われていないか確認してください．）
-
-6. 同じくその少し下の `ports` の TensorBoard用の`VVVV:6006` を変更
-コンテナ部のデフォルトは6006です．ホスト部は誰かと競合しないように自由に変更してください．
-
-7. 以下のコマンドで`.docker`をコピーして、イメージ作成が始まります(そこそこ時間はかかります)
+5. 以下のコマンドで`.docker`をコピーして、イメージ作成が始まります(そこそこ時間はかかります)
 > cp -r .docker/ dir/.docker/  
-> make up
+> make build && make up
 
-8. 終わったあと、下のコマンドを実行してコンテナに入ってnotebookを起動 `ZZZZ`はコンテナのport
-> (ksl-nn02) \$ docker exec -it <container_name> bash  
-> (in cont.) $ jupyter notebook --ip=0.0.0.0 --port ZZZZ --allow-root
+6. 終わったあと、下のコマンドを実行してコンテナに入ってnotebookを起動
+> (ksl-nn02) docker exec -it {container_name} bash  
+> (in container) jupyter lab --ip=0.0.0.0 --port 8888 --allow-root  
+> (in container) tensorboard --logdir /home/nb-user/{path/to/log} --port 6006 --host 0.0.0.0  
 
-9. コマンドプロンプトで別タブを開き，下のコマンドのYYYY(ホスト) XXXX(コンテナ)に変更し、`localhost:YYYY` にブラウザでアクセスすればnotebookが見えるはずです
-> ssh ksl-nn02 -L YYYY:ksl-nn02:XXXX -N`  
+もしくは
+
+> sudo docker exec -t {container_name} jupyter lab --ip=0.0.0.0 --port 8888 --allow-root  
+> sudo docker exec -t {container_name} tensorboard --logdir /home/nb-user/{path/to/log} --port 6006 --host 0.0.0.0  
+
+7. 自分のPCで Terminal/コマンドプロンプト を開き，下のコマンドの `XXXX` や `YYYY` を .env で設定した `JUPYTER_LAB_PORT` と `TENSORBOARD_PORT` に変更し、自分のPCのブラウザから `localhost:XXXX`  や `localhost:YYYY` にアクセスすれば notebook や TensorBoard が見えるはずです
+
+> `ssh ksl-nn02.nagaokaut.ac.jp -L XXXX:ksl-nn02:XXXX -L YYYY:ksl-nn02:YYYY -N`  
+> 例） `ssh ksl-nn02.nagaokaut.ac.jp -N -L 7790:ksl-nn02:7790 -L 7791:ksl-nn02:7791 -N`  
 

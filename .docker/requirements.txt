@@ -21,6 +21,9 @@
 # typing_extensions
 # urllib3
 # wheel
+# # tensorflow, tensorboard がインストールに失敗するので、先にインストールしてみる
+tensorflow
+tensorboard
 # # jupyterlab, jupyterlab-serverをインストールした時のパッケージ
 jupyter_server
 jupyterlab
