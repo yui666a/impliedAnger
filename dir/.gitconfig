@@ -1,0 +1,5 @@
+[user]
+	name = yui666a
+	email = haiso666@gmail.com
+[credential]
+	helper = "!f() { /home/nb-user/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node /tmp/vscode-remote-containers-ae541ea841501b421b00692fd63185d5d7d9d236.js git-credential-helper $*; }; f"

@@ -9,3 +9,9 @@
 /dir/resources/*
 __pycache__
 .ipynb_checkpoints
+/dir/.vscode-server
+/dir/.ssh
+/dir/.dotnet
+
+/dir/yui666a
+/dir/yui666a2

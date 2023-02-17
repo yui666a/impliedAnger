@@ -165,3 +165,10 @@ transformers[tf-cpu]
 # wrapt
 torch
 torchvision
+ginza
+# # BertJapaneseTokenizer.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking')用のパッケージ
+fugashi
+ipadic
+matplotlib
+seaborn
+wandb

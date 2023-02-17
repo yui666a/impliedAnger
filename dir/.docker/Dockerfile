@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y tzdata
 RUN apt-get install -y \
   python3 \
   make \
+  cmake \
   build-essential \
   libssl-dev \
   libbz2-dev \
@@ -53,7 +54,6 @@ RUN apt-get install -y \
   python3-pip \
   libboost-dev \
   locales \
-  cmake \
   && locale-gen ja_JP.UTF-8 \
   && apt-get autoremove -y && apt-get clean
 
@@ -73,10 +73,10 @@ ENV PATH $PATH:${HOME}/.local/bin
 RUN echo 'export LANG=ja_JP.UTF-8' >> /home/nb-user/.bashrc \
   && echo 'export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$ "' >> /home/nb-user/.bashrc
 
-COPY .docker/requirements.txt requirements.txt
-# RUN python3 --version | cat
 
 # Install python modules
+COPY .docker/requirements.txt requirements.txt
+# RUN python3 --version | cat
 RUN pip3 install --upgrade pip
 
 RUN pip3 install -r requirements.txt --user \
@@ -112,21 +112,21 @@ RUN wget https://nlp.ist.i.kyoto-u.ac.jp/nl-resource/knp/knp-4.20.tar.bz2 \
   # \
   # && cd ..
 
-# Install transformers
-RUN wget -O transformers.tar.gz https://github.com/huggingface/transformers/archive/refs/tags/v4.25.1.tar.gz \
-  && pip3 install --user transformers.tar.gz \
-  && sudo rm *.tar.*
+# # Install transformers
+# RUN wget -O transformers.tar.gz https://github.com/huggingface/transformers/archive/refs/tags/v4.25.1.tar.gz \
+#   && pip3 install --user transformers.tar.gz \
+#   && sudo rm *.tar.*
 
-# # # [old] Install transformers
-# # WORKDIR ${HOME}
-# # RUN git clone https://github.com/huggingface/transformers.git -b v3.1.0 --depth 1
-# # WORKDIR ${HOME}/transformers
-# # RUN pip3 install .
+# # [old] Install transformers
+# WORKDIR ${HOME}
+# RUN git clone https://github.com/huggingface/transformers.git -b v3.1.0 --depth 1
+# WORKDIR ${HOME}/transformers
+# RUN pip3 install .
 
 
-# Install Ginza
+# # Install Ginza
 # # pipでインストールする
-RUN pip3 install ginza
+# pip3 install ginza
 # # Install for tar.gz from github
 # RUN sudo -E curl -L -O https://github.com/megagonlabs/ginza/releases/download/v5.1.2/ginza-5.1.2.tar.gz \
 #   -O https://github.com/megagonlabs/ginza/releases/download/v5.1.2/ja_ginza-5.1.2.tar.gz \

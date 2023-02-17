@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y tzdata
 RUN apt-get install -y \
   python3 \
   make \
+  cmake \
   build-essential \
   libssl-dev \
   libbz2-dev \
@@ -53,7 +54,6 @@ RUN apt-get install -y \
   python3-pip \
   libboost-dev \
   locales \
-  cmake \
   && locale-gen ja_JP.UTF-8 \
   && apt-get autoremove -y && apt-get clean
 
