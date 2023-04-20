@@ -25,3 +25,4 @@ __pycache__
 /dir/.wget-hsts
 /dir/.python_history
 /dir/.gitconfig
+/dir/.config/*
