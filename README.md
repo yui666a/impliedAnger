@@ -17,6 +17,7 @@
 > (ksl-nn02) docker exec -it {container_name} bash  
 > (in container) jupyter lab --ip=0.0.0.0 --port 8888 --allow-root  
 > (in container) tensorboard --logdir /home/nb-user/{path/to/log} --port 6006 --host 0.0.0.0  
+> (GPUを指定する場合は) CUDA_VISIBLE_DEVICES="2" jupyter lab --ip=0.0.0.0 --port 8888 --allow-root
 
 もしくは
 
@@ -27,4 +28,3 @@
 
 > `ssh ksl-nn02.nagaokaut.ac.jp -L XXXX:ksl-nn02:XXXX -L YYYY:ksl-nn02:YYYY -N`  
 > 例） `ssh ksl-nn02.nagaokaut.ac.jp -N -L 7790:ksl-nn02:7790 -L 7791:ksl-nn02:7791 -N`  
-
