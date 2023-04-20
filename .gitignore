@@ -13,5 +13,15 @@ __pycache__
 /dir/.ssh
 /dir/.dotnet
 
+/dir/cache_dir
+/dir/output/roberta-waseda
+/dir/results
+/dir/runs
+/dir/wandb
+
 /dir/yui666a
 /dir/yui666a2
+/dir/.netrc
+/dir/.wget-hsts
+/dir/.python_history
+/dir/.gitconfig
