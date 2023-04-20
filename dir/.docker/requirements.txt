@@ -114,9 +114,10 @@ scikit-learn
 # scikit-learn
 # scipy
 # threadpoolctl
-# # transformers, sentencepiece をインストールした時のパッケージ
+# # transformers, sentencepiece, simpletransformers をインストールした時のパッケージ
 transformers
 sentencepiece
+simpletransformers
 # filelock
 # huggingface-hub
 # regex
@@ -172,3 +173,5 @@ ipadic
 matplotlib
 seaborn
 wandb
+rhoknp
+pip-review
