@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 export LANG=ja_JP.UTF-8
 export PS1="${debian_chroot:+($debian_chroot)}\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\]$ "
+alias python="python3"
+alias pip="pip3"
